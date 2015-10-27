@@ -24,11 +24,11 @@
       // Depending on the URL argument, test the compressed or uncompressed version.
       var compressed = (document.location.search == '?compressed');
       if (compressed) {
+        document.write('<TITLE>Test harness for diff_match_patch.min.js</TITLE>');
+        document.write('<scr'+'ipt type="text/javascript" src="diff_match_patch.min.js"></scr'+'ipt>');
+      } else {
         document.write('<TITLE>Test harness for diff_match_patch.js</TITLE>');
         document.write('<scr'+'ipt type="text/javascript" src="diff_match_patch.js"></scr'+'ipt>');
-      } else {
-        document.write('<TITLE>Test harness for diff_match_patch_uncompressed.js</TITLE>');
-        document.write('<scr'+'ipt type="text/javascript" src="diff_match_patch_uncompressed.js"></scr'+'ipt>');
       }
     </script>
 
