@@ -1,0 +1,34 @@
+{
+  "name": "google-diff-match-patch",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jeremistadler/google-diff-match-patch",
+  "authors": [
+    "Jeremi Stadler <stadler.jeremi@gmail.com>"
+  ],
+  "description": "Google Diff Match Patch library",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "diff",
+    "match",
+    "patch"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "cpp",
+    "csharp",
+    "java",
+    "lua",
+    "maven",
+    "python2",
+    "python3",
+    "objectivec"
+  ]
+}
