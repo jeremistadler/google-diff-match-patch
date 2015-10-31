@@ -22,13 +22,6 @@
     "bower_components",
     "test",
     "tests",
-    "cpp",
-    "csharp",
-    "java",
-    "lua",
-    "maven",
-    "python2",
-    "python3",
-    "objectivec"
+    "csharp"
   ]
 }
