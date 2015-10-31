@@ -1242,6 +1242,33 @@ diff_match_patch.prototype.diff_prettyHtml = function(diffs) {
   return html.join('');
 };
 
+diff_match_patch.prototype.diff_prettyConsole = function(diffs) {
+  var args = [];
+  var result = '';
+
+ for (var x = 0; x < diffs.length; x++) {
+   var op = diffs[x][0];    // Operation (insert, delete, equal)
+   var data = diffs[x][1];  // Text of change.
+   var text = data.replace(/\n/g, '<newline>');
+   switch (op) {
+     case DIFF_INSERT:
+      args.push('background:#e6ffe6');
+      result += '%c' + text;
+       break;
+     case DIFF_DELETE:
+       args.push('background:#ffe6e6;text-decoration:line-through;');
+       result += '%c' + text;
+       break;
+     case DIFF_EQUAL:
+       args.push('background:transparent');
+       result += '%c' + text;
+       break;
+   }
+ }
+ args.unshift(result);
+ console.log.apply(console, args);
+};
+
 
 /**
  * Compute and return the source text (all equalities and deletions).
